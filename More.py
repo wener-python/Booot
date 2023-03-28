@@ -2,6 +2,7 @@ import telebot
 from telebot import types
 import os
 import random
+import schedule
 from time import sleep
 
 
@@ -174,7 +175,9 @@ def funk():
         except Exception as _ex:
             print(_ex)
             sleep(15)
+
 try:
     funk()
 except Exception:
     funk()
+schedule.every(60).minutes.do(funk())
