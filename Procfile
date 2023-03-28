@@ -1,1 +1,1 @@
-worker: python More.py
+worker: python3 More.py
