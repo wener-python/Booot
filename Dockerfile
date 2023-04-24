@@ -1,13 +1,13 @@
 FROM python:3.9
 
-WORKDIR /app
+WORKDIR /main
 
-COPY requirements.txt /app/requirements.txt
+COPY requirements.txt /main/requirements.txt
 
 RUN pip install -r requirements.txt
 
-COPY . /app
+COPY . /main
 
 EXPOSE 5000
 
-CMD ["python", "app.py"]
+CMD ["python", "main.py"]
