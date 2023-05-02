@@ -2,7 +2,6 @@ import telebot
 from telebot import types
 import os
 import random
-import schedule
 from time import sleep
 
 
@@ -250,4 +249,3 @@ try:
     funk()
 except Exception:
     funk()
-schedule.every(60).minutes.do(funk())
